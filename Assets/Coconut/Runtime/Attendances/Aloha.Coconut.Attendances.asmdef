@@ -1,0 +1,16 @@
+{
+    "name": "Aloha.Coconut.Attendances",
+    "rootNamespace": "Aloha.Coconut.Attendances",
+    "references": [
+        "GUID:3fcedb7702fa2634fb56dd7869a20997"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

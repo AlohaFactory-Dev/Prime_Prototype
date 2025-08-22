@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cc410354445fd543a786010e0b12eb3, type: 3}
+  m_Name: CCN_InAppReviewPopupViewConfig
+  m_EditorClassIdentifier: 
+  isOverlay: 1
+  slices:
+  - {fileID: -5651870666118463753, guid: 72329cd7df7a6f046b7e6a6db5b0053a, type: 3}
+  - {fileID: -3488380247072081949, guid: 0f5731893cf091d4ab57fa33ed8f9f8d, type: 3}
+  - {fileID: 1746801900103872835, guid: 0c1b5448f56578f4c89744632fbbbb66, type: 3}

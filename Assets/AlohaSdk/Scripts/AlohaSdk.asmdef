@@ -1,0 +1,20 @@
+{
+    "name": "AlohaSdk",
+    "rootNamespace": "AlohaSdk",
+    "references": [
+        "GUID:a4cfc1a18fa3a469b96d885db522f42e",
+        "GUID:7d8924c6e6beb44e18f19e8c0b5068cd",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:5282360240f1d674da96c3185fc2b55c",
+        "GUID:be77ae7f3a7f4e17b18de8aeae3b4495"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

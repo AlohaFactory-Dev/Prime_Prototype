@@ -1,0 +1,11 @@
+framework module FlamingoKit {
+  umbrella header "FlamingoKit.h"
+  export *
+
+  module * { export * }
+}
+
+module FlamingoKit.Swift {
+  header "FlamingoKit-Swift.h"
+  requires objc
+}

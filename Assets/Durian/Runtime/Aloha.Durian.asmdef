@@ -1,0 +1,33 @@
+{
+    "name": "Aloha.Durian",
+    "rootNamespace": "Aloha.Durian",
+    "references": [
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:560b04d1a97f54a4e82edc0cbbb69285",
+        "GUID:d916973297127884d9787fda0a683dae",
+        "GUID:3fcedb7702fa2634fb56dd7869a20997",
+        "GUID:a872350b9fdccd241993194da1d6e240",
+        "GUID:eb86049c93825084496c2ed818756a0e",
+        "GUID:f473eb9d5b3d5d248ae6773017753e68",
+        "GUID:e2146bdc04d424169b039613a1b62bdf",
+        "GUID:2a0340569ab0e1245a38e0d6c7b2529b",
+        "GUID:f7ab044c4e45d475f892d9b9365b1ab1",
+        "GUID:ac145e6b8c6034cdbadc8c6e26aedbcf",
+        "GUID:1e8e55397bd004beaba78a667566665f",
+        "GUID:23dad9d59a474cb6a052bb9322271ae3",
+        "GUID:4f1551f14aec32a4482415afa54d8fea",
+        "GUID:5204e417f34c4b547ac3b60c54ab4e81",
+        "GUID:60bfecf5cb232594891bc622f40d6bed",
+        "GUID:94784fe063e07084fa48918fe20f183d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

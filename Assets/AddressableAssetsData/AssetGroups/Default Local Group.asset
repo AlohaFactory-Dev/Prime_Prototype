@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: a117f9b745b4544438a62ac26cafc10d
+  m_SerializeEntries:
+  - m_GUID: 0d12308bb07045047a0caa430ccf3581
+    m_Address: Property_Key_Golden
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0f6c934ef71328e45b492ff6bb0bc96c
+    m_Address: Property_Key_Special
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 16d273233921b6443898694fe2c5ba35
+    m_Address: Canvas_TitleScreen
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 19833fdf73c59614589fcadc72553d3a
+    m_Address: AlohaSdk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2ab390961fb59734984cc4d1b8d1396e
+    m_Address: Property_Key_Epic
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 37fc8a78a3109b040b619aaa08db4691
+    m_Address: UI_Icon_Equipment_Ring_Ice
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b1d137e454975f42bf2e669ad9fb182
+    m_Address: SampleUIViewConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5d75a221fa5d54d4bbc62f2510fbe0dc
+    m_Address: Property_Coin
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 784dc8b3631083343a8e8b39377805d3
+    m_Address: Property_Coin_Purple
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8c9cfa26abfee488c85f1582747f6a02
+    m_Address: AlohaSampleScene
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a0e626f6f0c67e64284a71ac23b0be10
+    m_Address: UI_Icon_Equipment_Weapon_GreenOnion
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c0e437d301d25894c8592ab860e9791b
+    m_Address: Property_Coin_Blue
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6a2f07711472b54191fb9858f0ad758
+    m_Address: Property_Gem
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d97afda2f2a26e7418d5b62dc514bc06
+    m_Address: Property_Coin_Silver
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e613b658c3b3cb542a92e7fab0bef810
+    m_Address: Canvas_SystemUI
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f8d39d91f4f9f4b4c8398757815fd088
+    m_Address: NicknameFilteringTesterUIViewConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c500563653463c343839ec906c2c5ab2, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: bdd2727232decc4478561ac885ccb385, type: 2}
+    - {fileID: 11400000, guid: 8fe7e8ef4539ca747ad80fdc296633fa, type: 2}

@@ -1,0 +1,16 @@
+﻿group,key,English,Korean
+Common,Yes,Yes_,예
+Common,No,[No],아니오
+Common,Error,[Error],오류
+Common,Warning,[Warning],경고
+Common,Notice,[Notice],알림
+Account,LinkFailed,[Failed to link account],계정 연동 실패
+Account,AnonymousSignOutWarning,[Game data of guest account will be deleted if you sign out.<br>Do you really want to sign out?],게스트 계정에서 로그아웃하면 모든 정보가 삭제됩니다.<br>정말로 로그아웃하시겠습니까?
+Account,SignOutWarning,[Do you really want to sign out?],정말로 로그아웃하시겠습니까?
+Account,WithdrawWarning,[When you delete your account<c> all data collected by the game is deleted and cannot be recovered. <br>Any data stored on your device will also be deleted. <br>Are you sure you want to delete your account? <br><br><size=70%> All data includes personal information such as email<c> nickname<c> and PID<c> please check our Privacy Policy for details.],계정 삭제시 게임이 수집하는 모든 데이터가 삭제되며 복구가 불가능합니다. <br>또한<c> 기기에 저장된 데이터도 모두 초기화됩니다. <br>정말로 계정을 삭제하시겠습니까? <br><br><size=70%> 모든 데이터엔 이메일<c> 닉네임<c> PID 등의 개인정보가 포함되며 상세한 항목은 개인정보 처리방침을 확인해주시기 바랍니다.
+Account,AccountChangeWarning,[Game data of current account will be deleted if you sign in to the other account.<br>Do you really want to sign in?],다른 계정으로 로그인하면 현재 계정의 모든 데이터가 삭제되며 복구가 불가능합니다.<br>정말로 다른 계정으로 로그인하시겠습니까?
+Account,RestartGame,[Please restart the game.],게임을 다시 시작해주세요.
+TextFilter,BlankSpace,[Blank spaces are not allowed.],공백 문자는 사용할 수 없습니다.
+TextFilter,InvalidCharacter,[You can't use special characters.],특수 문자는 사용할 수 없습니다.
+TextFilter,BannedWordIncluded,[Contains an unavailable word.],사용할 수 없는 단어가 포함되어있습니다.
+TextFilter,InvalidLength,[Your nickname must be least 4 characters and no more than 20 characters.],닉네임은 4자 이상 20자 이하여야 합니다.

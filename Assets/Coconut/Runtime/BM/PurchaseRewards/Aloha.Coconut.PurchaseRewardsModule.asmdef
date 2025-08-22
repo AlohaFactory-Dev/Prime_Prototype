@@ -1,0 +1,20 @@
+{
+    "name": "Aloha.Coconut.PurchaseRewardsModule",
+    "rootNamespace": "Aloha.Coconut",
+    "references": [
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4",
+        "GUID:560b04d1a97f54a4e82edc0cbbb69285",
+        "GUID:3fcedb7702fa2634fb56dd7869a20997",
+        "GUID:af627e48705d4e74e952d093671500eb",
+        "GUID:5204e417f34c4b547ac3b60c54ab4e81"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

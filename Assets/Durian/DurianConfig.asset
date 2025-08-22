@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a94a750e98afe448ab8c7cb9e1c7c2, type: 3}
+  m_Name: DurianConfig
+  m_EditorClassIdentifier: 
+  prodServerUrl: https://aih-aloha-demo-api-4ze2j5ee5a-an.a.run.app
+  devServerUrl: https://aih-aloha-demo-api-4ze2j5ee5a-an.a.run.app
+  statusCheckInterval: 5
+  versionCheckInterval: 5
+  mailPollingInterval: 60
+  mailPlayerActionId: 0
+  mailRedDotPath: Lobby/Main/Menu/Mail
+  announcementPollingInterval: 300
+  announcementRedDotPath: Lobby/Main/Menu/Announcement
+  leaderboardIds:
+  - name: Test
+    devId: 01944e54-6073-abd2-166e-483bb1c89006
+    prodId: 01944e54-6073-abd2-166e-483bb1c89006
+  - name: RushEvent
+    devId: 0195cff8-0308-5501-0bfb-71f4ade07e5e
+    prodId: 
+  autoSignInAsGuest: 1
+  gcpWebClientId: 717431915505-ggmspsnj1uk5i7ns3oin25ii6u0d8s95.apps.googleusercontent.com
+  gcpWebClientSecret: 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
+  publicDataSavePath: 

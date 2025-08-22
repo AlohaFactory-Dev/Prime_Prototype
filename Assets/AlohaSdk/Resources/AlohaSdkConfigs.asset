@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bf6c4f5a9705f40b24a4c6666d9674, type: 3}
+  m_Name: AlohaSdkConfigs
+  m_EditorClassIdentifier: 
+  showBannerAdsOnInitialized: 0
+  autoCUID: 0
+  offlineCheckInterval: 30
+  adUnitData:
+    AOS_BA: 431e2a1e2329076c
+    AOS_IS: 67fe0f1e5ff695c6
+    AOS_RV: 75cdaf12d8219ee1
+    IOS_BA: afcebecc87bd6083
+    IOS_IS: 213850a4275a515e
+    IOS_RV: c67921022e98a241
+  appToken: 
+  adjustEnvironment: 0
+  eventId_play_start: 
+  eventId_play_end: 
+  eventId_time_spent: 
+  eventId_tutorial: 
+  eventId_in_app_purchase: 
+  eventId_asset: 
+  eventId_item: 
+  eventId_mobile_purchase: 
+  eventId_in_app_ads: 
+  flamingoAccessKey: 

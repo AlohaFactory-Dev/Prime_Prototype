@@ -1,0 +1,13 @@
+rarity,baseBonus,bonusInc,levelMax,requiredRarity,requireSameSet,requireSamePart,requiredCount
+Normal,6,5,10,Normal,TRUE,TRUE,2
+Magic,12,9,15,Magic,TRUE,TRUE,2
+Rare,27,18,20,Rare,TRUE,TRUE,2
+Epic,81,27,25,Epic,FALSE,TRUE,1
+EpicP1,162,54,30,EpicP1,FALSE,TRUE,1
+EpicP2,324,108,35,EpicP2,TRUE,TRUE,1
+Legend,648,216,40,Legend,FALSE,TRUE,1
+LegendP1,1296,432,45,Legend,FALSE,TRUE,1
+LegendP2,1944,648,50,Legend,FALSE,TRUE,1
+LegendP3,2592,864,55,Legend,TRUE,TRUE,2
+Mythic,3888,1296,60,Mythic,TRUE,TRUE,1
+MythicP1,5196,1732,65,Mythic,TRUE,TRUE,0

@@ -1,0 +1,19 @@
+{
+    "name": "AlohaSdk.Editor",
+    "rootNamespace": "AlohaSdk.Editor",
+    "references": [
+        "GUID:7d8924c6e6beb44e18f19e8c0b5068cd",
+        "GUID:f473eb9d5b3d5d248ae6773017753e68"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

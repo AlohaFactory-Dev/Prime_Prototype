@@ -1,0 +1,4 @@
+
+[Id;#description;values0;values1;values2;values3;values4;values5;#valueDescription0;#valueDescription1;#valueDescription2;#valueDescription3;#valueDescription4;#valueDescription5]
+[Stamina;스테미나 정보;50;600;1;5;-99999;-99999;최대치;리필 인터벌(초)<br>(카피바라는 1440);리필 양;스테이지 시작에 필요한 양]
+[EquipmentRandomBoxCeiling;랜덤장비박스 천장;10;10;10;-99999;-99999;-99999;Supply 횟수;HighQuality 횟수;Legendary 횟수]

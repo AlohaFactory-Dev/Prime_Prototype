@@ -1,0 +1,17 @@
+{
+    "name": "Aloha.Coconut.DailyFreeRewardsModule",
+    "rootNamespace": "Aloha.Coconut",
+    "references": [
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4",
+        "GUID:3fcedb7702fa2634fb56dd7869a20997"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

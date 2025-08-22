@@ -1,0 +1,7 @@
+eventVar,objective,reward1Type,reward1Amount,reward2Type,reward2Amount,reward3Type,reward3Amount
+1,100,testReward,10,,,,
+1,200,testReward,20,,,,
+1,300,testReward,30,,,,
+2,100,testReward,10,,,,
+2,200,testReward,20,,,,
+2,300,testReward,30,,,,

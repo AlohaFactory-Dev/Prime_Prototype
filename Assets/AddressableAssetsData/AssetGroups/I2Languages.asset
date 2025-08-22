@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: I2Languages
+  m_EditorClassIdentifier: 
+  m_GroupName: I2Languages
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 815223f21a2ff104b99a235f2b15d7e5
+  m_SerializeEntries:
+  - m_GUID: b2dca46229919b4419ee8e85b74ce44d
+    m_Address: I2Languages
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 85f3985965a083a4daee2e01da54a216
+    m_Address: I2Languages_Font
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 193ad95af16d8db4a97eff9d700a4ad0
+    m_Address: NotoSansKR-Black SDF
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8ee43a0fa7a56a64996eec40c2674e2e
+    m_Address: NotoSansKR-Black SDF Outline
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c500563653463c343839ec906c2c5ab2, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 6712155b4058ace49b4f13a904053f74, type: 2}
+    - {fileID: 11400000, guid: 8826c94e9576a034dad3dd897330e6fb, type: 2}

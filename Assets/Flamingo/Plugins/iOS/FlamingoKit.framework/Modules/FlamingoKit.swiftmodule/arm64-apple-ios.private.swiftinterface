@@ -1,0 +1,105 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name FlamingoKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import BackgroundTasks
+@_exported import FlamingoKit
+import FlamingoLogApiClient
+import Foundation
+import StoreKit
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+@_hasMissingDesignatedInitializers @objc(ALFlamingoConfiguration) final public class FlamingoConfiguration : ObjectiveC.NSObject {
+  @objc public static func builder(withAccessKey: Swift.String) -> FlamingoKit.FlamingoConfiguration.Builder
+  @objc(ALFlamingoConfigurationBuilder) final public class Builder : ObjectiveC.NSObject {
+    @objc public init(withAccessKey accessKey: Swift.String)
+    @objc final public func with(userDefaults: Foundation.UserDefaults?) -> FlamingoKit.FlamingoConfiguration.Builder
+    @objc final public func with(appVersion: Swift.String?) -> FlamingoKit.FlamingoConfiguration.Builder
+    @objc final public func build() -> FlamingoKit.FlamingoConfiguration
+    @objc deinit
+  }
+  @objc deinit
+}
+public enum FlamingoError : Swift.Error {
+  case loginFailed(_: (any Swift.Error)?)
+}
+@_inheritsConvenienceInitializers @objc(ALFlamingoCommon) public class FlamingoCommon : ObjectiveC.NSObject {
+  @objc(loginWithAppUserId:) public static func login(appUserId: Swift.String)
+  @objc(logEventWithEventCode:eventData:customEventCode:) public static func logEvent(eventCode: Swift.String, eventData: Swift.String?, customEventCode: Swift.String?)
+  @objc(startPlaySessionWithSessionInfo:customParams:completion:) public static func startPlaySession(playSessionInfo: Swift.String, customParams: Swift.String?, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc(endPlaySessionWithResult:customParams:completion:) public static func endPlaySession(result: Swift.String, customParams: Swift.String?, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc(finishTutorialWithTutorialId:tutorialName:customParams:completion:) public static func finishTutorial(tutorialId: Swift.String, tutorialName: Swift.String?, customParams: Swift.String?, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc(purchaseIAPWithStore:isoCurrency:price:transactionId:itemId:itemName:isTest:customParams:completion:) public static func purchaseIAP(store: Swift.String, isoCurrency: Swift.String, price: Swift.Double, transactionId: Swift.String?, itemId: Swift.String?, itemName: Swift.String?, isTest: Swift.Bool, customParams: Swift.String?, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc(changeAssetAmountWithAssetId:assetName:amountDiff:resultAmount:actionId:actionName:objectId:objectName:customParams:) public static func changeAssetAmount(assetId: Swift.String, assetName: Swift.String?, amountDiff: Swift.Int, resultAmount: Swift.Int, actionId: Swift.String?, actionName: Swift.String?, objectId: Swift.String?, objectName: Swift.String?, customParams: Swift.String?)
+  @objc(changeItemAmountWithItemId:itemName:amountDiff:resultAmount:actionId:actionName:objectId:objectName:customParams:) public static func changeItemAmount(itemId: Swift.String, itemName: Swift.String?, amountDiff: Swift.Int, resultAmount: Swift.Int, actionId: Swift.String?, actionName: Swift.String?, objectId: Swift.String?, objectName: Swift.String?, customParams: Swift.String?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class Logger {
+  public enum LogLevel {
+    case debug
+    case info
+    case error
+    case fault
+    public static func == (a: FlamingoKit.Logger.LogLevel, b: FlamingoKit.Logger.LogLevel) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func log(level: FlamingoKit.Logger.LogLevel, _ message: Swift.String, function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line)
+  public static func debug(_ message: Swift.String, function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line)
+  public static func info(_ message: Swift.String, function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line)
+  public static func error(_ message: Swift.String, function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line)
+  public static func fault(_ message: Swift.String, function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(ALFlamingo) final public class Flamingo : ObjectiveC.NSObject, FlamingoKit.FlamingoType {
+  @objc(sharedInstance) public static var shared: FlamingoKit.Flamingo {
+    @objc get
+  }
+  @objc public static var isInitialized: Swift.Bool {
+    @objc get
+  }
+  @objc deinit
+}
+extension FlamingoKit.Flamingo {
+  @objc final public func login(appUserId: Swift.String)
+  @objc final public func logEvent(eventCode: Swift.String, eventData: Swift.String?, customEventCode: Swift.String?)
+  @objc final public func startPlaySession(playSessionInfo: Swift.String, customParams: Swift.String?)
+  @objc final public func endPlaySession(result: Swift.String, customParams: Swift.String?)
+  @objc final public func finishTutorial(tutorialId: Swift.String, tutorialName: Swift.String?, customParams: Swift.String?)
+  @objc final public func purchaseIAP(store: Swift.String, isoCurrency: Swift.String, price: Swift.Double, transactionId: Swift.String?, itemId: Swift.String?, itemName: Swift.String?, isTest: Swift.Bool, customParams: Swift.String?)
+  @objc final public func changeAssetAmount(assetId: Swift.String, assetName: Swift.String?, amountDiff: Swift.Int, resultAmount: Swift.Int, actionId: Swift.String?, actionName: Swift.String?, objectId: Swift.String?, objectName: Swift.String?, customParams: Swift.String?)
+  @objc final public func changeItemAmount(itemId: Swift.String, itemName: Swift.String?, amountDiff: Swift.Int, resultAmount: Swift.Int, actionId: Swift.String?, actionName: Swift.String?, objectId: Swift.String?, objectName: Swift.String?, customParams: Swift.String?)
+}
+@objc(ALPurchaseInfo) final public class PurchaseInfo : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let purchasedTransactionIdentifiers: Swift.Set<Swift.String>
+  @objc final public let createdAt: Foundation.Date
+  @objc final public let updatedAt: Foundation.Date
+  @objc public init(purchasedTransactionIdentifiers: Swift.Set<Swift.String>, createdAt: Foundation.Date = .now, updatedAt: Foundation.Date = .now)
+  @objc final public func contains(transactionIdentifier: Swift.String) -> Swift.Bool
+  @objc final public func adding(transactionIdentifier: Swift.String) -> FlamingoKit.PurchaseInfo
+  final public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+}
+@objc(ALFlamingoType) public protocol FlamingoType {
+  @objc func login(appUserId: Swift.String)
+  @objc func logEvent(eventCode: Swift.String, eventData: Swift.String?, customEventCode: Swift.String?)
+  @objc func startPlaySession(playSessionInfo: Swift.String, customParams: Swift.String?)
+  @objc func endPlaySession(result: Swift.String, customParams: Swift.String?)
+  @objc func finishTutorial(tutorialId: Swift.String, tutorialName: Swift.String?, customParams: Swift.String?)
+  @objc func purchaseIAP(store: Swift.String, isoCurrency: Swift.String, price: Swift.Double, transactionId: Swift.String?, itemId: Swift.String?, itemName: Swift.String?, isTest: Swift.Bool, customParams: Swift.String?)
+  @objc func changeAssetAmount(assetId: Swift.String, assetName: Swift.String?, amountDiff: Swift.Int, resultAmount: Swift.Int, actionId: Swift.String?, actionName: Swift.String?, objectId: Swift.String?, objectName: Swift.String?, customParams: Swift.String?)
+  @objc func changeItemAmount(itemId: Swift.String, itemName: Swift.String?, amountDiff: Swift.Int, resultAmount: Swift.Int, actionId: Swift.String?, actionName: Swift.String?, objectId: Swift.String?, objectName: Swift.String?, customParams: Swift.String?)
+}
+@objc extension FlamingoKit.Flamingo {
+  @objc(configureWithAccessKey:appVersion:) public static func configure(accessKey: Swift.String, appVersion: Swift.String?) -> FlamingoKit.Flamingo
+}
+extension FlamingoKit.Logger.LogLevel : Swift.Equatable {}
+extension FlamingoKit.Logger.LogLevel : Swift.Hashable {}

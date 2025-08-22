@@ -1,0 +1,7 @@
+eventVar,productId,packageId,limit,isFree
+1,1001,test1,1,1
+1,1002,test1,1,0
+1,1003,test2,1,0
+2,2001,test1,1,1
+2,2002,test1,1,0
+2,2003,test2,1,0

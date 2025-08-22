@@ -1,0 +1,27 @@
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="org.jetbrains.kotlin:kotlin-stdlib:2.1.0" />
+        <androidPackage spec="org.jetbrains.kotlin:kotlin-reflect:2.1.0" />
+        <androidPackage spec="org.jetbrains.kotlinx:kotlinx-datetime:0.6.1" />
+        <androidPackage spec="androidx.core:core-ktx:1.8.0" />
+        <androidPackage spec="androidx.annotation:annotation:1.9.1" />
+        <androidPackage spec="androidx.appcompat:appcompat:1.4.1" />
+        <androidPackage spec="androidx.activity:activity-compose:1.9.3" />
+        <androidPackage spec="androidx.datastore:datastore-preferences:1.1.1" />
+        <androidPackage spec="com.google.protobuf:protobuf-javalite:3.25.3" />
+        <androidPackage spec="androidx.lifecycle:lifecycle-common:2.6.0" />
+        <androidPackage spec="androidx.lifecycle:lifecycle-runtime:2.6.0" />
+        <androidPackage spec="androidx.lifecycle:lifecycle-runtime-ktx:2.6.0" />
+        <androidPackage spec="androidx.lifecycle:lifecycle-process:2.6.0" />
+        <androidPackage spec="com.android.billingclient:billing-ktx:7.1.1" />
+        <androidPackage spec="com.android.installreferrer:installreferrer:2.2" />
+        <androidPackage spec="com.google.android.gms:play-services-ads-identifier:18.2.0" />
+        <androidPackage spec="com.squareup.moshi:moshi-kotlin:1.15.1" />
+        <androidPackage spec="com.squareup.moshi:moshi-adapters:1.15.1" />
+        <androidPackage spec="com.squareup.retrofit2:retrofit:2.10.0" />
+        <androidPackage spec="com.squareup.retrofit2:converter-moshi:2.10.0" />
+        <androidPackage spec="com.squareup.retrofit2:converter-scalars:2.10.0" />
+        <androidPackage spec="com.squareup.okhttp3:logging-interceptor:4.12.0" />
+        <androidPackage spec="com.auth0.android:jwtdecode:2.0.2" />
+    </androidPackages>
+</dependencies>

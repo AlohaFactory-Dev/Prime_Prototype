@@ -1,0 +1,11 @@
+{
+  "name": "com.aloha.dependency-manager",
+  "version": "0.1.0",
+  "displayName": "Aloha Dependency Manager",
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.2.1",
+    "com.unity.test-framework": "2.0.1-pre.18",
+    "com.unity.addressables": "1.21.21",
+    "com.unity.textmeshpro": "3.0.9"
+  }
+}

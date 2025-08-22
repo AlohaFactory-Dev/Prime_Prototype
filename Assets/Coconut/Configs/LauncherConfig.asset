@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d5eda6b259d614890b0883269cd4ef, type: 3}
+  m_Name: LauncherConfig
+  m_EditorClassIdentifier: 
+  launcherScenePath: Assets/Coconut/Scenes/Launcher.unity
+  preLaunchScripts: []
+  launcherInstallers:
+  - Aloha.Coconut.Launcher.DefaultLauncherInstaller
+  autoBootAfterLaunch: 1
+  rootGameScene:
+    m_AssetGUID: d54338142a3b50f4c9fc4a5ca59cdd6b
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  titlePrefab:
+    m_AssetGUID: 16d273233921b6443898694fe2c5ba35
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  launcherObjects:
+  - m_AssetGUID: e613b658c3b3cb542a92e7fab0bef810
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

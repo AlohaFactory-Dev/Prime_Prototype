@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cc410354445fd543a786010e0b12eb3, type: 3}
+  m_Name: EquipmentInfoPopupConfig
+  m_EditorClassIdentifier: 
+  isOverlay: 1
+  slices:
+  - {fileID: -5651870666118463753, guid: 72329cd7df7a6f046b7e6a6db5b0053a, type: 3}
+  - {fileID: 1625485134900027293, guid: e1376c6e8368774479d5fab6dea22683, type: 3}

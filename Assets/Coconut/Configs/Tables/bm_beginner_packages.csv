@@ -1,0 +1,10 @@
+id,iapId,day,reward1Alias,reward1Amount,reward2Alias,reward2Amount,reward3Alias,reward3Amount,reward4Alias,reward4Amount,reward5Alias,reward5Amount
+1,test1,1,Test,100,Test,200,Test,300,,,,
+1,test1,2,Test,400,Test,500,Test,600,,,,
+1,test1,3,Test,700,Test,800,Test,900,,,,
+2,test2,1,Test,100,Test,200,Test,300,,,,
+2,test2,2,Test,400,Test,500,Test,600,,,,
+2,test2,3,Test,700,Test,800,Test,900,,,,
+3,test3,1,Test,100,Test,200,Test,300,,,,
+3,test3,2,Test,400,Test,500,Test,600,,,,
+3,test3,3,Test,700,Test,800,Test,900,,,,

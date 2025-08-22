@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ead2e96dcd2756847999b4cd206999c2, type: 3}
+  m_Name: PrefabPalette
+  m_EditorClassIdentifier: 
+  prefabGroups:
+  - name: UI
+    prefabs:
+    - prefab: {fileID: 6107233974266774907, guid: 9748031546da9364a88746a07fb8b9e7, type: 3}
+  coconutCanvas:
+    prefab: {fileID: 2727524322216840852, guid: 386eb6e49c09c9446a065d95f87545c5, type: 3}
+  button:
+    prefab: {fileID: 6107233974266774907, guid: f45b1d2a50dfc5645bd4b3f1527136b2, type: 3}
+  text:
+    prefab: {fileID: 8928421195861793787, guid: e970ba9c785aae248b1c3a0ab1b5d340, type: 3}
+  dim:
+    prefab: {fileID: 3318433233376839647, guid: 72329cd7df7a6f046b7e6a6db5b0053a, type: 3}
+  safeArea:
+    prefab: {fileID: 4561171556469527990, guid: 6f4e146d57c76c443ad471773183920e, type: 3}
+  popupWindow:
+    prefab: {fileID: 320797927271556878, guid: ef064907b710a95418c95181e9c9e47b, type: 3}
+  barGauge:
+    prefab: {fileID: 4863486903833678163, guid: bb52b2759178af144b87299360e7a4aa, type: 3}

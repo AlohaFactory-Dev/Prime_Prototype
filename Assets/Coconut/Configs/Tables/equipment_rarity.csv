@@ -1,0 +1,16 @@
+rarity,requiredRarity,requiredSource,nameKey,requiredCount
+Common,Common,SameEquipment,Common/Grade/Common,2
+Great,Great,SameEquipment,Common/Grade/Great,2
+Rare,Rare,SameEquipment,Common/Grade/Rare,2
+Epic,Epic,SameEquipmentOrMaterial,Common/Grade/Epic,1
+Epic1,Epic,SameEquipmentOrMaterial,Common/Grade/Epic1,2
+Epic2,Epic2,SameEquipment,Common/Grade/Epic2,2
+Legendary,Legendary,SameEquipmentOrMaterial,Common/Grade/Legendary,1
+Legendary1,Legendary,SameEquipmentOrMaterial,Common/Grade/Legendary1,1
+Legendary2,Legendary,SameEquipment,Common/Grade/Legendary2,1
+Legendary3,Legendary3,SameEquipment,Common/Grade/Legendary3,2
+Mythic,Mythic,SameEquipmentOrMaterial,Common/Grade/Mythic,1
+Mythic1,Mythic,SameEquipmentOrMaterial,Common/Grade/Mythic1,1
+Mythic2,Mythic,SameEquipmentOrMaterial,Common/Grade/Mythic2,1
+Mythic3,Mythic,SameEquipmentOrMaterial,Common/Grade/Mythic3,1
+Mythic4,Mythic,SameEquipmentOrMaterial,Common/Grade/Mythic4,0

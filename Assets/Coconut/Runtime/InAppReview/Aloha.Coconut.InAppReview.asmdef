@@ -1,0 +1,19 @@
+{
+    "name": "Aloha.Coconut.InAppReview",
+    "rootNamespace": "Aloha.Coconut",
+    "references": [
+        "GUID:4139e191aa32f459e9eb2e331225ad7e",
+        "GUID:b4318b6f3695442c4983c360248781db",
+        "GUID:af930411fc272eb47b95db3deceab5ec",
+        "GUID:3fcedb7702fa2634fb56dd7869a20997"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

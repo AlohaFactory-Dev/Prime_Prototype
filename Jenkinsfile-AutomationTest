@@ -1,0 +1,73 @@
+pipeline {
+  //agent { label 'mac-unity-agent' }
+  agent { label 'mac_blob' }
+  environment {
+    UNITY_VERSION = "2022.3.53"
+  }
+  triggers {
+    githubPush()
+  }
+  stages {
+    stage('Find Unity') {
+      steps {
+        script {
+          def unityHubEditorPath = sh(script: "ls -d /Applications/Unity/Hub/Editor/*${UNITY_VERSION}*", returnStdout: true).trim()
+          if (unityHubEditorPath.isEmpty()) {
+            error "Unity ${UNITY_VERSION} not found."
+          }
+
+          env.UNITY_EDITOR_PATH = unityHubEditorPath + "/Unity.app/Contents/MacOS/Unity"
+        }
+      }
+    }
+    
+    stage ('Automation Test') {
+      steps {
+        script {
+          sh """
+          ${env.UNITY_EDITOR_PATH} -runTests -batchmode -nographics -projectPath ${env.WORKSPACE.replaceAll(' ', '\\\\ ')} \
+          -testPlatform EditMode -testResults ${env.WORKSPACE.replaceAll(' ', '\\\\ ')}/Builds/TestResults.xml \
+          || true
+          """
+        }
+        nunit testResultsPattern: 'Builds/TestResults.xml'
+      }
+    }
+  }
+
+  post {
+    success {
+      script {
+        def payload = """
+        {
+          "message": "🟢 Coconut has passed every test.",
+          "note": "${env.GIT_URL} ${env.GIT_COMMIT}"
+        }
+        """.trim()
+        sh "curl -X POST -H 'Content-type: application/json' --data '${payload.replaceAll("'", "\\'")}' ${env.ALOHA_SLACK_WEBHOOK_URL}"
+      }
+    }
+    unstable {
+      script {
+        def payload = """
+        {
+          "message": "🟡 Coconut has not passed some tests.",
+          "note": "${env.GIT_URL} ${env.GIT_COMMIT}"
+        }
+        """.trim()
+        sh "curl -X POST -H 'Content-type: application/json' --data '${payload.replaceAll("'", "\\'")}' ${env.ALOHA_SLACK_WEBHOOK_URL}"
+      }
+    }
+    failure {
+      script {
+        def payload = """
+        {
+          "message": "🔴 Coconut has passed no tests.",
+          "note": "${env.GIT_URL} ${env.GIT_COMMIT}"
+        }
+        """.trim()
+        sh "curl -X POST -H 'Content-type: application/json' --data '${payload.replaceAll("'", "\\'")}' ${env.ALOHA_SLACK_WEBHOOK_URL}"
+      }
+    }
+  }
+}

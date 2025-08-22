@@ -1,0 +1,3 @@
+eventVar,targetAction,totalRound,leaderboardName,roundReward1Type,roundReward1Amount,roundReward2Type,roundReward2Amount,roundReward3Type,roundReward3Amount
+1,testAction,4,RushEvent,testReward,100,testReward,100,testReward,100
+2,testAction,4,RushEvent,testReward,100,testReward,100,testReward,100

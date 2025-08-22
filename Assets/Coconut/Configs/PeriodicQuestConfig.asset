@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87804aa80cb8f834dadc2d7cb5b45b1d, type: 3}
+  m_Name: PeriodicQuestConfig
+  m_EditorClassIdentifier: 
+  dailyQuestRedDotPath: Lobby/Main/Quest/Daily
+  weeklyQuestRedDotPath: Lobby/Main/Quest/Weekly
+  dailyQuestRewardsTable: {fileID: 4900000, guid: 0a0822d2c50053f4e837dfc5907a37e8, type: 3}
+  dailyQuestMissionsTable: {fileID: 4900000, guid: 17c5e0d3ba414bd47bfb2e598083f8fe, type: 3}
+  weeklyQuestRewardsTable: {fileID: 4900000, guid: 6080b6dfba1bcbc4288d9dd5541a0690, type: 3}
+  weeklyQuestMissionsTable: {fileID: 4900000, guid: 2735b74ad91e6d541bce0ddeae828367, type: 3}

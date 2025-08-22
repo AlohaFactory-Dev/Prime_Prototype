@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb7334d821dad954eaf46b66cd997d3a, type: 3}
+  m_Name: TableConfig
+  m_EditorClassIdentifier: 
+  rootFolderAddress: Tables
+  startRow: 1
+  rootFolderPath: Assets/Coconut/Configs/Tables
+  googleClientId: 1079441451838-9iqvcd87nasv0nqrnbbam09a5thb82t6.apps.googleusercontent.com
+  googleClientSecret: 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
+  googleSheetInfos:
+  - alias: DefaultTable
+    sheetId: 1CBhGj_HYPQRkD1pJYL9ejvVekLOW1BUi2nAbXMrClrk

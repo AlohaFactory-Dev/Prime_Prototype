@@ -1,0 +1,19 @@
+{
+    "name": "Aloha.Coconut.Missions",
+    "rootNamespace": "Aloha.Coconut.Missions",
+    "references": [
+        "GUID:560b04d1a97f54a4e82edc0cbbb69285",
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4",
+        "GUID:d916973297127884d9787fda0a683dae",
+        "GUID:3fcedb7702fa2634fb56dd7869a20997"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>717431915505-l9vifvnse7bsfih2heuh0f5g4t8c9dor.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.717431915505-l9vifvnse7bsfih2heuh0f5g4t8c9dor</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBQiibwixvwfWKFvq9z6xvNLN7dXVJuWIA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>717431915505</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>kr.co.alohacorp.alohatestapp</string>
+	<key>PROJECT_ID</key>
+	<string>aloha-demo</string>
+	<key>STORAGE_BUCKET</key>
+	<string>aloha-demo.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:717431915505:ios:f5a495e03212a123faba50</string>
+	<key>DATABASE_URL</key>
+	<string>https://aloha-demo-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>

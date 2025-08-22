@@ -1,0 +1,5 @@
+{
+    "com.lupidan.apple-signin-unity": "https://github.com/lupidan/apple-signin-unity.git",
+    "com.google.signin": "https://github.com/AlohaFactory-Dev/aloha-google-signin-unity.git",
+    "com.unity.mobile.notifications": "2.4.0"
+}

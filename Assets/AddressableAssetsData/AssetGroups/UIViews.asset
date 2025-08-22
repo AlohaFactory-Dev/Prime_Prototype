@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: UIViews
+  m_EditorClassIdentifier: 
+  m_GroupName: UIViews
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 7d26d044690a4ff4fad64a32d6e3e645
+  m_SerializeEntries:
+  - m_GUID: 00af924be29216844992ae8b4abe729b
+    m_Address: EquipmentInfoPopupConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 229b4270c2e943343812f3f607d1bc43
+    m_Address: EquipmentMergePopupConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4891229090f02f24d8f55f2610c5917c
+    m_Address: ItemObtainedPopupConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a5a09133eb17d0244a9af85d4bc686b3
+    m_Address: SceneTransitionViewConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f970ffb28dbfefe48a03191bb656061d
+    m_Address: EquipmentPopupConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c500563653463c343839ec906c2c5ab2, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 154184d7938e0f3428763055f8281851, type: 2}
+    - {fileID: 11400000, guid: 8d3591c068067be4b8f252f456dd2f16, type: 2}
