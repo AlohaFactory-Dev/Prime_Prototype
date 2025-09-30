@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: a117f9b745b4544438a62ac26cafc10d
   m_currentHash:
     serializedVersion: 2
-    Hash: fa376f6c3d40bd67237efe2dd3e5db40
+    Hash: a26b6a24a9d92dbe2a57d32ebe44c7af
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -46,11 +46,13 @@ MonoBehaviour:
   m_GroupAssets:
   - {fileID: 11400000, guid: 802ae0071b58b934383e41b7e5cfb038, type: 2}
   - {fileID: 11400000, guid: 492a1206a145b854c84afb524839f18e, type: 2}
+  - {fileID: 11400000, guid: 1932f99e04c612443a89539416dd1e10, type: 2}
   - {fileID: 11400000, guid: 4a52f69138249ca49b636677d8e73429, type: 2}
   - {fileID: 11400000, guid: d052a09d7fe1dba4ea2437703f3339ef, type: 2}
   - {fileID: 11400000, guid: d64ee89f20ef07745acb8a93529edf9c, type: 2}
   - {fileID: 11400000, guid: ba1073844fcce374bafee4cd884f585e, type: 2}
   - {fileID: 11400000, guid: 8b32874850902414da2d65db7ecefaad, type: 2}
+  - {fileID: 11400000, guid: 1042d3f6d3b30f941a94b807c0c87716, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -93,6 +95,8 @@ MonoBehaviour:
     m_LabelNames:
     - default
     - coconut.configs
+    - Projectile
+    - FloatingText
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: aed33003afaf85f4786a21a418edd9ee, type: 2}

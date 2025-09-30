@@ -11,14 +11,14 @@ public enum FireType
     Howitzer
 }
 
-public enum AttackObjectSpeedType
+public enum ProjectileSpeedType
 {
     Speed, //속도
     Time //시간
 }
 
 [RequireComponent(typeof(Rigidbody2D), typeof(RecycleObject))]
-public class AttackObject : MonoBehaviour
+public class Projectile : MonoBehaviour
 {
     [InfoBox("이 필드는 곡사(FireType.Howitzer)일 때만 사용됩니다.")]
     [BoxGroup("Howitzer Settings")]
@@ -29,22 +29,40 @@ public class AttackObject : MonoBehaviour
     [SerializeField]
     private float howitzerHeight;
 
+    [BoxGroup("Normal")] [SerializeField] private AnimationCurve normalCurve;
+
     [SerializeField] private Transform mainObject;
-    [SerializeField] private RecycleObject recycleObject;
-    private AttackObjectTable _table;
+    private RecycleObject _recycleObject;
+    private ProjectileTable _table;
     private Action _onHit;
     private Sequence _sequence;
     private FireType FireType => _table.fireType;
-
+    private TrailRenderer _trailRenderer;
+    private ParticleSystem _particleSystem;
     private Vector3 _previousPosition;
+    private bool _isInitialized;
+    private float _releaseDelay = 3f; // 자동 해제 딜레이 타임
 
-
-    public void Init(Vector2 position, Action onHit, AttackObjectTable table, Vector2 targetPosition)
+    public void Init(Vector2 position, Action onHit, ProjectileTable table, Vector2 targetPosition)
     {
+        GetComponents();
+        transform.position = position; 
+
+        if (_trailRenderer)
+        {
+            _trailRenderer.Clear();
+            _trailRenderer.enabled = false;
+            _trailRenderer.enabled = true;
+        }
+        else if (_particleSystem)
+        {
+            _particleSystem.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+            _particleSystem.Play();
+        }
+
         mainObject.gameObject.SetActive(true);
         mainObject.transform.localPosition = Vector3.zero;
         _table = table;
-        transform.position = position;
         mainObject.localScale = Vector3.one * _table.scale;
         _onHit = onHit;
         if (table.delayRandomMin == 0)
@@ -56,6 +74,15 @@ public class AttackObject : MonoBehaviour
             mainObject.gameObject.SetActive(false);
             StartCoroutine(FireDelay(Random.Range(table.delayRandomMin, table.delayRandomMax), targetPosition));
         }
+    }
+
+    private void GetComponents()
+    {
+        if (_isInitialized) return;
+        _recycleObject = GetComponent<RecycleObject>();
+        _trailRenderer = GetComponentInChildren<TrailRenderer>();
+        _particleSystem = GetComponentInChildren<ParticleSystem>();
+        _isInitialized = true;
     }
 
 
@@ -79,10 +106,10 @@ public class AttackObject : MonoBehaviour
         _previousPosition = mainObject.position;
 
         _sequence = DOTween.Sequence();
-        if (_table.speedType == AttackObjectSpeedType.Speed)
+        if (_table.speedType == ProjectileSpeedType.Speed)
         {
             var speedValue = Vector2.Distance(transform.position, targetPosition) / Random.Range(_table.speedRandomMin, _table.speedRandomMax);
-            _sequence.Append(transform.DOMove(targetPosition, speedValue));
+            _sequence.Append(transform.DOMove(targetPosition, speedValue).SetEase(normalCurve));
             if (FireType == FireType.Howitzer)
             {
                 var howitzerTween = mainObject.DOLocalMoveY(howitzerHeight, speedValue).SetEase(howitzerCurve);
@@ -97,7 +124,7 @@ public class AttackObject : MonoBehaviour
         else
         {
             var speedValue = Random.Range(_table.speedRandomMin, _table.speedRandomMax);
-            _sequence.Append(transform.DOMove(targetPosition, speedValue));
+            _sequence.Append(transform.DOMove(targetPosition, speedValue).SetEase(normalCurve));
             if (FireType == FireType.Howitzer)
             {
                 var howitzerTween = mainObject.DOLocalMoveY(howitzerHeight, speedValue).SetEase(howitzerCurve);
@@ -113,11 +140,15 @@ public class AttackObject : MonoBehaviour
         _sequence.OnComplete(() =>
         {
             _onHit?.Invoke();
-            recycleObject.Release();
+            StartCoroutine(ReleaseAfterDelay());
         });
         _sequence.Play();
     }
-
+    private IEnumerator ReleaseAfterDelay()
+    {
+        yield return new WaitForSeconds(_releaseDelay);
+        _recycleObject.Release();
+    }
     private void UpdateHowitzerRotation()
     {
         // 현재 위치와 이전 위치의 차이로 실제 이동 방향 계산
@@ -132,4 +163,6 @@ public class AttackObject : MonoBehaviour
 
         _previousPosition = currentPosition;
     }
+    
+  
 }
