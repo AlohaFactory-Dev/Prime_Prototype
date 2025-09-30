@@ -5,12 +5,14 @@ using Zenject;
 
 public class LobbyInstaller : MonoInstaller
 {
-    [SerializeField] private CoconutCanvas coconutCanvas;
+    private CoconutCanvas _coconutCanvas;
 
     public override void InstallBindings()
     {
+        _coconutCanvas = GetComponentInChildren <CoconutCanvas>(true);
+        
         LobbyConainer.Initialize(Container);
-        Container.Bind<CoconutCanvas>().FromInstance(coconutCanvas).AsSingle().NonLazy();
+        Container.Bind<CoconutCanvas>().FromInstance(_coconutCanvas).AsSingle().NonLazy();
         Container.Bind<EquipmentInventoryFilterManager>().AsSingle().NonLazy();
     }
 }

@@ -9,7 +9,7 @@ public class StageInstaller : MonoInstaller
 {
     private FactoryManager _factoryManager;
     private CoconutCanvas _coconutCanvas;
-
+private StageManager _stageManager;
     public override void InstallBindings()
     {
         StageConainer.Initialize(Container);
@@ -19,19 +19,14 @@ public class StageInstaller : MonoInstaller
         // 필요한 컴포넌트들을 가져옵니다.
         _coconutCanvas = GetComponentInChildren<CoconutCanvas>();
         _factoryManager = GetComponentInChildren<FactoryManager>();
-
+        _stageManager = GetComponentInChildren<StageManager>();
 
         Container.Bind<CoconutCanvas>().FromInstance(_coconutCanvas).AsSingle().NonLazy();
         Container.Bind<FactoryManager>().FromInstance(_factoryManager).AsSingle().NonLazy();
+        Container.Bind<StageManager>().FromInstance(_stageManager).AsSingle().NonLazy();
+        
 
         Container.Bind<StageManager>().AsSingle().NonLazy();
-        // Container.Bind<MapManager>().FromInstance(mapManager).AsSingle().NonLazy();
-        // Container.Bind<DropHealManager>().AsSingle().NonLazy();
-        //
-        //
-        // Container.Bind<WaveManager>().FromInstance(waveManager).AsSingle().NonLazy();
-        // Container.Bind<StageUI>().FromInstance(stageUI).AsSingle().NonLazy();
-        // Container.Bind<StageCameraManager>().FromInstance(stageCameraManager).AsSingle().NonLazy();
 
         Init();
     }

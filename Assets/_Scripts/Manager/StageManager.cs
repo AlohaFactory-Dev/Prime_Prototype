@@ -3,9 +3,6 @@ using System.Threading.Tasks;
 using FactorySystem;
 using UnityEngine;
 
-public class StageManager
+public class StageManager : MonoBehaviour
 {
-    public StageManager()
-    {
-    }
 }
