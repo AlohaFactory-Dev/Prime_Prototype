@@ -9,12 +9,10 @@ public class StageInstaller : MonoInstaller
 {
     private FactoryManager _factoryManager;
     private CoconutCanvas _coconutCanvas;
-private StageManager _stageManager;
+    private StageManager _stageManager;
     public override void InstallBindings()
     {
         StageConainer.Initialize(Container);
-
-        // Bind the necessary components for the stage
 
         // 필요한 컴포넌트들을 가져옵니다.
         _coconutCanvas = GetComponentInChildren<CoconutCanvas>();
@@ -24,9 +22,6 @@ private StageManager _stageManager;
         Container.Bind<CoconutCanvas>().FromInstance(_coconutCanvas).AsSingle().NonLazy();
         Container.Bind<FactoryManager>().FromInstance(_factoryManager).AsSingle().NonLazy();
         Container.Bind<StageManager>().FromInstance(_stageManager).AsSingle().NonLazy();
-        
-
-        Container.Bind<StageManager>().AsSingle().NonLazy();
 
         Init();
     }
